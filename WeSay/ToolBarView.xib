@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleAspectFit" id="EhB-YN-FI0" customClass="ToolBarView" customModule="WeSay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="428" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SZe-TF-Wc4">
+                    <rect key="frame" x="107" y="10" width="1" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="AcQ-3u-u4f"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Av-lY-YXH">
+                    <rect key="frame" x="214" y="10" width="1" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="d9v-b2-mAF"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d3E-wo-QZ0">
+                    <rect key="frame" x="320" y="10" width="1" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="0ua-lI-ua0"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KK9-Yj-3Vv">
+                    <rect key="frame" x="107" y="0.0" width="107" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="照相">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Fo-oZ-ihI">
+                    <rect key="frame" x="214" y="0.0" width="107" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="视频">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzK-ND-fWI">
+                    <rect key="frame" x="0.0" y="0.0" width="107" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="相册">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AIB-hz-WAO">
+                    <rect key="frame" x="320" y="0.0" width="107" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="摄像">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="0Fo-oZ-ihI" firstAttribute="width" secondItem="AIB-hz-WAO" secondAttribute="width" id="0io-z3-oyS"/>
+                <constraint firstItem="SZe-TF-Wc4" firstAttribute="top" secondItem="EhB-YN-FI0" secondAttribute="top" constant="10" id="0lG-Ca-obq"/>
+                <constraint firstAttribute="bottom" secondItem="SZe-TF-Wc4" secondAttribute="bottom" constant="10" id="1Hi-WB-shp"/>
+                <constraint firstItem="jzK-ND-fWI" firstAttribute="leading" secondItem="EhB-YN-FI0" secondAttribute="leading" id="4s3-aK-9zz"/>
+                <constraint firstItem="KK9-Yj-3Vv" firstAttribute="leading" secondItem="jzK-ND-fWI" secondAttribute="trailing" id="8ZT-mD-H5L"/>
+                <constraint firstItem="0Av-lY-YXH" firstAttribute="leading" secondItem="KK9-Yj-3Vv" secondAttribute="trailing" id="9Lf-xq-aLO"/>
+                <constraint firstItem="KK9-Yj-3Vv" firstAttribute="top" secondItem="EhB-YN-FI0" secondAttribute="top" id="AsJ-yT-XOM"/>
+                <constraint firstItem="AIB-hz-WAO" firstAttribute="leading" secondItem="0Fo-oZ-ihI" secondAttribute="trailing" constant="-1" id="HII-Vq-p05"/>
+                <constraint firstItem="0Fo-oZ-ihI" firstAttribute="leading" secondItem="KK9-Yj-3Vv" secondAttribute="trailing" id="HJ7-PC-3Np"/>
+                <constraint firstItem="jzK-ND-fWI" firstAttribute="top" secondItem="EhB-YN-FI0" secondAttribute="top" id="QJO-K3-rNO"/>
+                <constraint firstAttribute="bottom" secondItem="0Fo-oZ-ihI" secondAttribute="bottom" id="R17-UP-OTq"/>
+                <constraint firstAttribute="bottom" secondItem="0Av-lY-YXH" secondAttribute="bottom" constant="10" id="SNY-Al-gud"/>
+                <constraint firstAttribute="centerY" secondItem="SZe-TF-Wc4" secondAttribute="centerY" id="UBK-cz-MaS"/>
+                <constraint firstAttribute="bottom" secondItem="jzK-ND-fWI" secondAttribute="bottom" id="VR3-jj-b9Z"/>
+                <constraint firstItem="KK9-Yj-3Vv" firstAttribute="width" secondItem="jzK-ND-fWI" secondAttribute="width" id="a8s-5o-hDH"/>
+                <constraint firstItem="d3E-wo-QZ0" firstAttribute="top" secondItem="EhB-YN-FI0" secondAttribute="top" constant="10" id="baq-xy-FQJ"/>
+                <constraint firstAttribute="bottom" secondItem="KK9-Yj-3Vv" secondAttribute="bottom" id="cMf-70-JdS"/>
+                <constraint firstItem="0Fo-oZ-ihI" firstAttribute="top" secondItem="EhB-YN-FI0" secondAttribute="top" id="g2x-7b-Bna"/>
+                <constraint firstItem="0Fo-oZ-ihI" firstAttribute="centerY" secondItem="AIB-hz-WAO" secondAttribute="centerY" id="gTb-Q3-kyM"/>
+                <constraint firstAttribute="trailing" secondItem="AIB-hz-WAO" secondAttribute="trailing" constant="1" id="hQu-ea-M8i"/>
+                <constraint firstItem="AIB-hz-WAO" firstAttribute="top" secondItem="EhB-YN-FI0" secondAttribute="top" id="lzZ-t5-k2g"/>
+                <constraint firstAttribute="bottom" secondItem="AIB-hz-WAO" secondAttribute="bottom" id="nOE-Da-gBY"/>
+                <constraint firstItem="0Av-lY-YXH" firstAttribute="top" secondItem="EhB-YN-FI0" secondAttribute="top" constant="10" id="o2r-5o-Fdw"/>
+                <constraint firstAttribute="centerY" secondItem="0Av-lY-YXH" secondAttribute="centerY" id="sCn-3w-MFf"/>
+                <constraint firstItem="d3E-wo-QZ0" firstAttribute="leading" secondItem="0Fo-oZ-ihI" secondAttribute="trailing" constant="-1" id="tzv-mc-Dx9"/>
+                <constraint firstItem="SZe-TF-Wc4" firstAttribute="leading" secondItem="jzK-ND-fWI" secondAttribute="trailing" id="wMd-S3-89t"/>
+                <constraint firstItem="0Fo-oZ-ihI" firstAttribute="width" secondItem="KK9-Yj-3Vv" secondAttribute="width" id="yd0-yx-BF7"/>
+                <constraint firstAttribute="bottom" secondItem="d3E-wo-QZ0" secondAttribute="bottom" constant="10" id="zjZ-CO-ihm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="albumBtn" destination="jzK-ND-fWI" id="57w-hx-z4o"/>
+                <outlet property="cameraBtn" destination="KK9-Yj-3Vv" id="9iJ-tB-pXL"/>
+                <outlet property="pickup" destination="AIB-hz-WAO" id="gda-iP-d1J"/>
+                <outlet property="videoBtn" destination="0Fo-oZ-ihI" id="8v8-Y0-fnq"/>
+            </connections>
+            <point key="canvasLocation" x="229" y="10"/>
+        </view>
+    </objects>
+</document>

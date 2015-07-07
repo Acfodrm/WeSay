@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MosaicView" customModule="WeSay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Mi.png" translatesAutoresizingMaskIntoConstraints="NO" id="ySG-ic-lge">
+                    <rect key="frame" x="8" y="10" width="82" height="80"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvT-FK-60B">
+                    <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="5mj-vQ-A5l"/>
+                        <constraint firstAttribute="width" constant="25" id="i5K-JX-P0K"/>
+                    </constraints>
+                    <state key="normal" image="icon_cancel">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onCancel:" destination="iN0-l3-epB" eventType="touchUpInside" id="aV6-55-k3Z"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2J-Oc-UFI">
+                    <rect key="frame" x="75" y="75" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="nJb-x1-wLw"/>
+                        <constraint firstAttribute="width" constant="25" id="vuX-O8-sqz"/>
+                    </constraints>
+                    <state key="normal" image="icon_zoom">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="ySG-ic-lge" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="3bb-hf-Kvr"/>
+                <constraint firstAttribute="bottom" secondItem="F2J-Oc-UFI" secondAttribute="bottom" id="6K8-g3-a7o"/>
+                <constraint firstAttribute="trailing" secondItem="ySG-ic-lge" secondAttribute="trailing" constant="10" id="CN9-Uq-q8Z"/>
+                <constraint firstAttribute="bottom" secondItem="ySG-ic-lge" secondAttribute="bottom" constant="10" id="Tod-2x-S7p"/>
+                <constraint firstItem="cvT-FK-60B" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="UGZ-Iv-Nxh"/>
+                <constraint firstAttribute="trailing" secondItem="F2J-Oc-UFI" secondAttribute="trailing" id="egV-JL-SSJ"/>
+                <constraint firstItem="ySG-ic-lge" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="gfK-qP-FI7"/>
+                <constraint firstItem="cvT-FK-60B" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="oUT-nL-ibI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancelBtn" destination="cvT-FK-60B" id="OdW-kr-MxW"/>
+                <outlet property="imageview" destination="ySG-ic-lge" id="c5o-Yu-gAK"/>
+                <outlet property="zoomBtn" destination="F2J-Oc-UFI" id="GtK-jy-NNi"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="Mi.png" width="291" height="299"/>
+        <image name="icon_cancel" width="40" height="40"/>
+        <image name="icon_zoom" width="40" height="40"/>
+    </resources>
+</document>
